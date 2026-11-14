@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>云南医疗招采商机 HOT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <div class="brand-mark">HOT</div>
+        <div>
+          <div class="brand-title">云南医疗招采商机 HOT</div>
+          <div class="brand-subtitle">内镜 + 超声医疗器械招采情报</div>
+        </div>
+      </div>
+
+      <nav class="nav-list" aria-label="主导航">
+        <button class="nav-item active" type="button" data-page="featured">
+          <span class="nav-icon">精</span>
+          今日精选
+        </button>
+        <button class="nav-item" type="button" data-page="activity">
+          <span class="nav-icon">动</span>
+          全部招采动态
+        </button>
+        <button class="nav-item" type="button" data-page="daily">
+          <span class="nav-icon">报</span>
+          招采日报
+        </button>
+        <button class="nav-item" type="button" data-page="topics">
+          <span class="nav-icon">题</span>
+          主题地图
+        </button>
+        <button class="nav-item" type="button" data-page="saved">
+          <span class="nav-icon">收</span>
+          收藏/跟进
+        </button>
+        <button class="nav-item" type="button" data-page="settings">
+          <span class="nav-icon">设</span>
+          订阅设置
+        </button>
+      </nav>
+
+      <div class="sidebar-foot">
+        <span class="status-dot"></span>
+        今日 07:30 已生成日报
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="mobile-header">
+        <div class="mobile-brand-mark">HOT</div>
+        <div class="mobile-brand-copy">
+          <strong>云南医疗招采</strong>
+          <span>内镜 · 超声商机</span>
+        </div>
+        <span class="mobile-report-status"><span class="status-dot"></span>日报已更新</span>
+      </header>
+      <header class="topbar command-panel" aria-labelledby="workspace-title">
+        <div class="command-copy">
+          <h1 id="workspace-title">精选</h1>
+          <p>AI 自动挑选的高价值招采内容</p>
+        </div>
+        <div class="command-divider"></div>
+        <div class="command-controls">
+          <div class="global-category-tabs" role="group" aria-label="招采分类筛选">
+            <button class="category-tab active" type="button" data-global-category="">全部</button>
+            <button class="category-tab" type="button" data-global-category="endo">内镜</button>
+            <button class="category-tab" type="button" data-global-category="ultrasound">超声</button>
+            <button class="category-tab" type="button" data-global-category="candidate">医疗设备</button>
+            <button class="category-tab" type="button" data-global-category="official">官方有效</button>
+            <button class="category-tab" type="button" data-global-category="supplemental">补充线索</button>
+          </div>
+          <form class="global-search" role="search" aria-label="招采搜索">
+            <input id="global-search-input" class="input global-search-input" type="search" placeholder="搜索标题/采购单位/地区/产品..." autocomplete="off">
+            <button id="global-search-button" class="secondary-button search-button" type="submit">搜索</button>
+          </form>
+        </div>
+      </header>
+
+      <section id="page-featured" class="page active" aria-labelledby="featured-title">
+        <div class="page-heading intelligence-hero">
+          <div>
+            <p class="eyebrow">AIHOT 参考版 · 招采情报工作台</p>
+            <h2 id="featured-title">今日招采精选</h2>
+            <p>先看官方有效公告，再看医疗设备候选和补充线索；销售只需要判断下一步动作。</p>
+          </div>
+          <div class="date-card">
+            <span>早报批次</span>
+            <strong>08:10 前查看</strong>
+          </div>
+        </div>
+
+        <div class="layer-summary-grid" aria-label="公告来源层级">
+          <article class="metric-card">
+            <span>官方有效</span>
+            <strong id="layer-official-count">0</strong>
+            <small>可直接打开官方原文</small>
+          </article>
+          <article class="metric-card highlight">
+            <span>医疗设备候选</span>
+            <strong id="layer-candidate-count">0</strong>
+            <small>泛医疗设备词命中，需人工判断</small>
+          </article>
+          <article class="metric-card">
+            <span>补充线索</span>
+            <strong id="layer-supplemental-count">0</strong>
+            <small>第三方或列表线索，需核验</small>
+          </article>
+        </div>
+
+        <div class="featured-timeline-shell">
+          <section class="dashboard-main featured-timeline-panel">
+            <div class="section-title-row">
+              <div>
+                <h3>&#26102;&#38388;&#32447;&#25307;&#37319;&#24773;&#25253;</h3>
+                <p>&#25353;&#21457;&#24067;&#26085;&#26399;&#21644;&#36319;&#36827;&#20248;&#20808;&#32423;&#25490;&#21015;&#65292;&#20808;&#25195;&#23448;&#26041;&#26377;&#25928;&#65292;&#20877;&#30475;&#20505;&#36873;&#21644;&#34917;&#20805;&#32447;&#32034;&#12290;</p>
+              </div>
+              <button class="secondary-button nowrap-button" type="button" data-jump-activity>全部动态</button>
+            </div>
+            <div id="featured-feed" class="featured-intelligence-feed"></div>
+          </section>
+
+        </div>
+      </section>
+
+      <section id="page-activity" class="page" aria-labelledby="activity-title">
+        <div class="page-heading intelligence-hero compact-hero">
+          <div>
+            <p class="eyebrow">全部招采动态</p>
+            <h2 id="activity-title">近 7 天招采动态</h2>
+            <p>按时间、阶段、产品和来源层级筛选，像看资讯流一样快速扫标。</p>
+          </div>
+        </div>
+
+        <section class="daily-workbench card" aria-label="招采动态筛选">
+          <div class="daily-filter-bar">
+            <label>
+              <span>时间窗口</span>
+              <select id="activity-window-filter" class="input"></select>
+            </label>
+            <label>
+              <span>阶段方向</span>
+              <select id="activity-stage-filter" class="input"></select>
+            </label>
+            <label>
+              <span>来源层级</span>
+              <select id="activity-layer-filter" class="input"></select>
+            </label>
+            <label>
+              <span>产品</span>
+              <select id="activity-product-filter" class="input"></select>
+            </label>
+          </div>
+          <div id="activity-feed" class="activity-feed"></div>
+        </section>
+      </section>
+
+      <section id="page-daily" class="page" aria-labelledby="daily-title">
+        <div class="report-reader">
+          <aside class="report-directory" aria-label="日报目录">
+            <div id="report-type-tabs" class="report-type-tabs" role="tablist" aria-label="报告类型">
+              <button class="report-type-tab active" type="button" data-report-type="daily">日报</button>
+              <button class="report-type-tab" type="button" data-report-type="weekly">周报</button>
+              <button class="report-type-tab" type="button" data-report-type="monthly">月报</button>
+            </div>
+            <div class="report-directory-heading">
+              <h2 id="daily-title">招采报告</h2>
+              <p>按真实公告发布日期归档</p>
+            </div>
+            <nav id="report-period-list" class="report-period-list" aria-label="报告日期"></nav>
+          </aside>
+          <article id="report-document" class="report-document" aria-live="polite"></article>
+        </div>
+      </section>
+
+      <section id="page-list" class="page" aria-labelledby="list-title">
+        <div class="page-heading">
+          <div>
+            <h2 id="list-title">商机列表</h2>
+            <p>按地区、产品、采购阶段、等级和跟进状态快速筛选。</p>
+          </div>
+          <button id="reset-filters" class="secondary-button" type="button">重置筛选</button>
+        </div>
+
+        <section class="filter-card card" aria-label="商机筛选">
+          <label>
+            <span>地区</span>
+            <select id="filter-region" class="input"></select>
+          </label>
+          <label>
+            <span>产品</span>
+            <select id="filter-product" class="input"></select>
+          </label>
+          <label>
+            <span>采购阶段</span>
+            <select id="filter-stage" class="input"></select>
+          </label>
+          <label>
+            <span>商机等级</span>
+            <select id="filter-level" class="input"></select>
+          </label>
+          <label>
+            <span>跟进状态</span>
+            <select id="filter-follow" class="input"></select>
+          </label>
+          <label>
+            <span>来源/类型</span>
+            <select id="filter-data-type" class="input"></select>
+          </label>
+        </section>
+
+        <section class="card table-card">
+          <div class="table-head">
+            <h3>匹配商机</h3>
+            <span id="list-count">0 条</span>
+          </div>
+          <div class="opportunity-table" role="table" aria-label="商机列表">
+            <div class="table-row table-header" role="row">
+              <div>项目名称</div>
+              <div>来源/类型</div>
+              <div>地区</div>
+              <div>阶段</div>
+              <div>产品</div>
+              <div>等级</div>
+              <div>跟进优先级</div>
+              <div>跟进状态</div>
+              <div>截止时间</div>
+            </div>
+            <div id="table-body"></div>
+          </div>
+        </section>
+      </section>
+
+      <section id="page-detail" class="page" aria-labelledby="detail-title">
+        <div id="detail-back-bar" class="detail-back-bar">
+          <button id="back-to-list" class="secondary-button detail-back-button" type="button">← 返回上一页</button>
+        </div>
+        <div class="page-heading compact">
+          <div>
+            <h2 id="detail-title">商机详情</h2>
+            <p>查看项目关键信息、AI摘要、销售动作建议与跟进记录。</p>
+          </div>
+          <button id="detail-favorite" class="secondary-button" type="button">收藏</button>
+        </div>
+
+        <div class="detail-layout">
+          <article class="detail-main card">
+            <div class="detail-header">
+              <div>
+                <div class="badge-row">
+                  <span id="detail-stage" class="stage-badge">招标公告</span>
+                  <span id="detail-level" class="level-badge s">S级</span>
+                  <span id="detail-data-type-badge" class="data-type-badge mock">模拟数据</span>
+                </div>
+                <p id="detail-data-type-note" class="data-type-note"></p>
+                <h3 id="detail-name">项目名称</h3>
+              </div>
+              <div>
+                <span class="score-label">跟进优先级</span>
+                <div id="detail-score" class="score-badge">高</div>
+              </div>
+            </div>
+
+            <dl class="info-grid">
+              <div>
+                <dt>数据类型</dt>
+                <dd id="detail-data-type"></dd>
+              </div>
+              <div>
+                <dt>公告类型</dt>
+                <dd id="detail-notice-type"></dd>
+              </div>
+              <div>
+                <dt>来源网站</dt>
+                <dd id="detail-source-site"></dd>
+              </div>
+              <div>
+                <dt>来源类型</dt>
+                <dd id="detail-source-type"></dd>
+              </div>
+              <div>
+                <dt>发布时间</dt>
+                <dd id="detail-publish-date"></dd>
+              </div>
+              <div>
+                <dt>采购单位</dt>
+                <dd id="detail-hospital"></dd>
+              </div>
+              <div>
+                <dt>所属地区</dt>
+                <dd id="detail-region"></dd>
+              </div>
+              <div>
+                <dt>涉及科室</dt>
+                <dd id="detail-department"></dd>
+              </div>
+              <div>
+                <dt>采购阶段</dt>
+                <dd id="detail-stage-text"></dd>
+              </div>
+              <div>
+                <dt>涉及产品</dt>
+                <dd id="detail-products"></dd>
+              </div>
+              <div>
+                <dt>预算金额</dt>
+                <dd id="detail-budget"></dd>
+              </div>
+              <div>
+                <dt>报名截止时间</dt>
+                <dd id="detail-signup-deadline"></dd>
+              </div>
+              <div>
+                <dt>投标截止时间</dt>
+                <dd id="detail-bid-deadline"></dd>
+              </div>
+              <div>
+                <dt>截止时间</dt>
+                <dd id="detail-deadline"></dd>
+              </div>
+              <div>
+                <dt>联系人</dt>
+                <dd id="detail-contact"></dd>
+              </div>
+              <div>
+                <dt>联系电话</dt>
+                <dd id="detail-phone"></dd>
+              </div>
+              <div>
+                <dt>产品匹配标签</dt>
+                <dd id="detail-related"></dd>
+              </div>
+              <div>
+                <dt>人工核验</dt>
+                <dd id="detail-manual-check"></dd>
+              </div>
+            </dl>
+
+            <div class="source-card">
+              <div class="source-card-main">
+                <h4>原文来源</h4>
+                <dl class="source-meta">
+                  <div>
+                    <dt>来源平台</dt>
+                    <dd id="detail-source-platform"></dd>
+                  </div>
+                  <div>
+                    <dt>原文状态</dt>
+                    <dd id="detail-source-status"></dd>
+                  </div>
+                </dl>
+                <p id="detail-source-hint" class="source-hint"></p>
+              </div>
+              <div class="source-actions">
+                <button id="snapshot-button" class="primary-button source-action" type="button">查看原文快照</button>
+                <a id="detail-link" class="secondary-button source-action" href="#" target="_blank" rel="noreferrer">尝试打开官方详情</a>
+                <a id="source-platform-link" class="secondary-button source-action source-action-muted" href="#" target="_blank" rel="noreferrer">打开来源平台</a>
+                <button id="copy-notice-title" class="secondary-button source-action" type="button">复制公告标题</button>
+                <button id="copy-project-code" class="secondary-button source-action" type="button">复制项目编号</button>
+                <span id="copy-source-toast" class="copy-toast" role="status" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="content-block">
+              <h4>AI摘要</h4>
+              <p id="detail-summary"></p>
+            </div>
+
+            <div class="content-block">
+              <h4>销售动作建议</h4>
+              <ul id="detail-advice" class="advice-list"></ul>
+            </div>
+
+            <div class="content-block">
+              <h4>公告原文摘要 / 原文内容</h4>
+              <p id="detail-full-text"></p>
+            </div>
+          </article>
+
+          <aside class="detail-side">
+            <article class="card">
+              <h3>项目时间线</h3>
+              <ol id="detail-timeline" class="timeline"></ol>
+            </article>
+
+            <article class="card">
+              <h3>跟进记录</h3>
+              <label class="field-label" for="follow-status">跟进状态</label>
+              <select id="follow-status" class="input">
+                <option>未跟进</option>
+                <option>待联系</option>
+                <option>今日联系</option>
+                <option>已建联</option>
+                <option>方案推进中</option>
+                <option>暂不跟进</option>
+              </select>
+
+              <label class="field-label" for="follow-note">备注</label>
+              <textarea id="follow-note" class="input textarea" rows="6" placeholder="记录客户反馈、下一步动作或风险点"></textarea>
+
+              <button id="save-follow" class="primary-button full" type="button">保存</button>
+              <p id="save-toast" class="toast" role="status"></p>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <section id="page-topics" class="page" aria-labelledby="topics-title">
+        <div class="page-heading intelligence-hero compact-hero">
+          <div>
+            <p class="eyebrow">TOPICS · 主题地图</p>
+            <h2 id="topics-title">按主题看招采</h2>
+            <p>先把地区、产品、阶段和来源变成入口，后续再接入更细的医院专题。</p>
+          </div>
+        </div>
+        <div class="topic-grid">
+          <article class="topic-card">
+            <h3>按地区</h3>
+            <p>昆明、玉溪、红河、大理等州市，适合区域销售快速查看负责范围。</p>
+            <button class="secondary-button" type="button" data-jump-activity>查看地区动态</button>
+          </article>
+          <article class="topic-card">
+            <h3>按产品</h3>
+            <p>内镜、超声、洗消、冷光源、图像处理器，适合产品线负责人筛选。</p>
+            <button class="secondary-button" type="button" data-jump-activity>查看产品动态</button>
+          </article>
+          <article class="topic-card">
+            <h3>按阶段</h3>
+            <p>招标前、市场调研、招标中、招标后，决定今天是影响参数还是准备投标。</p>
+            <button class="secondary-button" type="button" data-jump-activity>查看阶段动态</button>
+          </article>
+          <article class="topic-card">
+            <h3>按来源</h3>
+            <p>官方有效、医疗设备候选、补充线索分开看，避免把待核验线索误当结果。</p>
+            <button class="secondary-button" type="button" data-jump-activity>查看来源动态</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="page-saved" class="page" aria-labelledby="saved-title">
+        <div class="page-heading intelligence-hero compact-hero">
+          <div>
+            <p class="eyebrow">收藏与跟进</p>
+            <h2 id="saved-title">收藏/跟进</h2>
+            <p>查看当前浏览器中已收藏和已跟进的商机记录。</p>
+          </div>
+        </div>
+        <div id="saved-view-tabs" class="saved-view-tabs" role="tablist" aria-label="收藏跟进视图">
+          <button class="saved-view-tab active" type="button" data-saved-view="favorites">我的收藏 <span id="saved-favorite-count">0</span></button>
+          <button class="saved-view-tab" type="button" data-saved-view="followed">跟进记录 <span id="saved-follow-count">0</span></button>
+        </div>
+        <section id="saved-record-list" class="saved-record-list" aria-live="polite"></section>
+        <p class="local-storage-note">记录仅保存在当前浏览器，不会同步到其他设备或账号。</p>
+      </section>
+
+      <section id="page-settings" class="page" aria-labelledby="settings-title">
+        <div class="page-heading">
+          <div>
+            <h2 id="settings-title">订阅设置</h2>
+            <p>配置每日区域商机日报的推送范围、优先级阈值和触达渠道。</p>
+          </div>
+          <button id="add-subscription" class="primary-button" type="button">新增订阅</button>
+        </div>
+
+        <div class="settings-grid">
+          <article class="card">
+            <h3>负责区域</h3>
+            <div class="check-grid" id="region-options"></div>
+          </article>
+
+          <article class="card">
+            <h3>关注产品</h3>
+            <div class="check-grid wide" id="product-options"></div>
+          </article>
+
+          <article class="card">
+            <h3>关注阶段</h3>
+            <div class="check-grid" id="stage-options"></div>
+          </article>
+
+          <article class="card">
+            <h3>推送渠道</h3>
+            <div class="check-grid" id="channel-options"></div>
+          </article>
+
+          <article class="card settings-rule-card">
+            <h3>推送规则</h3>
+            <label class="field-label" for="score-range">最低优先级阈值</label>
+            <div class="range-row">
+              <input id="score-range" type="range" min="60" max="100" value="82">
+              <strong id="score-value">82</strong>
+            </div>
+
+            <label class="field-label" for="push-time">推送时间</label>
+            <input id="push-time" class="input" type="time" value="07:30">
+
+            <div class="setting-preview">
+              <span>当前策略</span>
+              <p id="setting-summary"></p>
+            </div>
+          </article>
+        </div>
+
+        <section class="card subscription-manager" aria-labelledby="subscription-list-title">
+          <div class="section-title-row">
+            <div>
+              <h3 id="subscription-list-title">我的订阅</h3>
+              <p>已保存到当前浏览器，尚未同步云端邮件系统。</p>
+            </div>
+          </div>
+          <div id="subscription-list" class="subscription-list"></div>
+          <p id="subscription-status" class="subscription-status" role="status" aria-live="polite"></p>
+        </section>
+      </section>
+
+      <section id="page-more" class="page mobile-more-page" aria-labelledby="more-title">
+        <div class="mobile-page-heading">
+          <p class="eyebrow">工作台</p>
+          <h2 id="more-title">更多功能</h2>
+          <p>查看主题、管理跟进和调整订阅。</p>
+        </div>
+        <div class="mobile-more-list">
+          <button class="mobile-more-item" type="button" data-more-page="topics">
+            <span class="mobile-more-icon">题</span>
+            <span><strong>主题地图</strong><small>按产品和阶段查看商机</small></span>
+            <span aria-hidden="true">›</span>
+          </button>
+          <button class="mobile-more-item" type="button" data-more-page="saved">
+            <span class="mobile-more-icon">收</span>
+            <span><strong>收藏/跟进</strong><small>查看已保存的真实记录</small></span>
+            <span aria-hidden="true">›</span>
+          </button>
+          <button class="mobile-more-item" type="button" data-more-page="settings">
+            <span class="mobile-more-icon">设</span>
+            <span><strong>订阅设置</strong><small>新增或取消本地订阅</small></span>
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <nav class="mobile-bottom-nav" aria-label="手机端主导航">
+      <button class="mobile-nav-item active" type="button" data-mobile-page="featured" aria-current="page">
+        <span class="mobile-nav-icon">精</span><span>精选</span>
+      </button>
+      <button class="mobile-nav-item" type="button" data-mobile-page="activity">
+        <span class="mobile-nav-icon">动</span><span>全部</span>
+      </button>
+      <button class="mobile-nav-item" type="button" data-mobile-page="daily">
+        <span class="mobile-nav-icon">报</span><span>日报</span>
+      </button>
+      <button class="mobile-nav-item" type="button" data-mobile-page="more">
+        <span class="mobile-nav-icon">多</span><span>更多</span>
+      </button>
+    </nav>
+  </div>
+
+  <div id="snapshot-modal" class="snapshot-modal" hidden>
+    <div class="snapshot-backdrop" data-close-snapshot></div>
+    <article class="snapshot-panel" role="dialog" aria-modal="true" aria-labelledby="snapshot-title">
+      <header class="snapshot-header">
+        <div>
+          <p class="eyebrow">系统整理版原文</p>
+          <h2 id="snapshot-title">公告原文快照</h2>
+        </div>
+        <button id="snapshot-close" class="secondary-button" type="button" aria-label="关闭原文快照">关闭</button>
+      </header>
+      <dl class="snapshot-meta">
+        <div>
+          <dt>公告标题</dt>
+          <dd id="snapshot-notice-title"></dd>
+        </div>
+        <div>
+          <dt>项目编号</dt>
+          <dd id="snapshot-project-code"></dd>
+        </div>
+        <div>
+          <dt>项目名称</dt>
+          <dd id="snapshot-project-name"></dd>
+        </div>
+        <div>
+          <dt>采购单位</dt>
+          <dd id="snapshot-purchaser"></dd>
+        </div>
+        <div>
+          <dt>预算金额</dt>
+          <dd id="snapshot-budget"></dd>
+        </div>
+        <div>
+          <dt>截止时间</dt>
+          <dd id="snapshot-deadline"></dd>
+        </div>
+        <div>
+          <dt>采购需求</dt>
+          <dd id="snapshot-demand"></dd>
+        </div>
+        <div>
+          <dt>采购代理机构</dt>
+          <dd id="snapshot-agency"></dd>
+        </div>
+        <div>
+          <dt>联系电话</dt>
+          <dd id="snapshot-phone"></dd>
+        </div>
+        <div>
+          <dt>来源平台</dt>
+          <dd id="snapshot-source-platform"></dd>
+        </div>
+        <div>
+          <dt>官方详情链接</dt>
+          <dd><a id="snapshot-official-detail" href="#" target="_blank" rel="noreferrer"></a></dd>
+        </div>
+        <div>
+          <dt>官方数据源链接</dt>
+          <dd><a id="snapshot-official-api" href="#" target="_blank" rel="noreferrer"></a></dd>
+        </div>
+      </dl>
+      <section class="snapshot-body-section">
+        <h3>正文内容</h3>
+        <pre id="snapshot-body"></pre>
+      </section>
+    </article>
+  </div>
+
+  <script src="data/daily-report.sample.js"></script>
+  <script src="data/processed-opportunities.sample.js"></script>
+  <script src="scripts/lib/opportunity-status.js"></script>
+  <script src="scripts/lib/local-subscriptions.js"></script>
+  <script src="scripts/lib/local-opportunity-records.js"></script>
+  <script src="scripts/lib/report-periods.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
